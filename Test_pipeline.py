@@ -30,3 +30,18 @@ def data_preprocessing_pipeline(data):
     data[categorical_features] = data[categorical_features].fillna(data[categorical_features].mode().iloc[0])
 
     return data
+
+
+
+#test
+
+data = pd.read_csv("data.csv")
+
+print("Original Data:")
+print(data)
+
+#realizando el procesamiento de datos
+cleaned_data = data_preprocessing_pipeline(data)
+
+print("Preprocessed Data:")
+print(cleaned_data)
