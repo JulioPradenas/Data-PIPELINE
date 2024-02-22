@@ -43,5 +43,5 @@ print(data)
 #realizando el procesamiento de datos
 cleaned_data = data_preprocessing_pipeline(data)
 
-print("Preprocessed Data:")
+print("data preprocesada:")
 print(cleaned_data)
